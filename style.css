@@ -1,0 +1,275 @@
+/* ===== BASIC SETTINGS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #090979, #000000, #4b0082);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #6c63ff;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #d6d6ff;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background: #0b1026;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8c7cff;
+}
+
+
+/* ===== GENERAL SECTIONS ===== */
+
+section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #a99cff;
+}
+
+section p {
+    max-width: 900px;
+    margin: auto;
+    color: #d8d8e8;
+}
+
+
+/* ===== PLANETS ===== */
+
+.planet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.planet {
+    background: #10162f;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #303b70;
+    transition: 0.3s;
+}
+
+.planet:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #625cff;
+}
+
+.planet img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.planet h3 {
+    color: #b8b1ff;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== MISSIONS ===== */
+
+.mission-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.mission {
+    background: #111936;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    border-left: 4px solid #7c6cff;
+    transition: 0.3s;
+}
+
+.mission:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(124, 108, 255, 0.5);
+}
+
+.mission h3 {
+    color: #a99cff;
+    margin-bottom: 10px;
+}
+
+
+/* ===== BLACK HOLE ===== */
+
+.black-hole {
+    background: radial-gradient(
+        circle,
+        #000000 20%,
+        #24104f 35%,
+        #6b21a8 55%,
+        #050816 75%
+    );
+    padding: 70px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #7b2cbf;
+}
+
+.black-hole h2 {
+    color: white;
+    font-size: 38px;
+}
+
+.black-hole p {
+    color: #eeeeee;
+}
+
+
+/* ===== FACTS ===== */
+
+.facts {
+    background: #080d20;
+    border-top: 1px solid #242d55;
+    border-bottom: 1px solid #242d55;
+}
+
+.facts ul {
+    list-style: none;
+    max-width: 700px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.facts li {
+    background: #121a38;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* ===== LINKS ===== */
+
+a {
+    color: #9d91ff;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/* ===== BUTTON ===== */
+
+button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8c7cff;
+    transform: scale(1.05);
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #03050d;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+
+    .planet,
+    .mission {
+        width: 90%;
+    }
+
+    .black-hole h2 {
+        font-size: 30px;
+    }
+}
+
+
